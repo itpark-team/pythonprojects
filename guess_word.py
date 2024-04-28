@@ -1,24 +1,22 @@
 import os
 
 clear_screen = lambda: os.system("clear")  # for linux and macos
-# clear = lambda: os.system("cls")  # for windows
+# clear_screen = lambda: os.system("cls")  # for windows
 
 guessed_word = input("Введите слово: ")
-hint = input("Введите подсказку: ")
+hint_for_guessed_word = input("Введите подсказку: ")
 
 answer_word = ["*"] * len(guessed_word)
 
-
 game_over = False
 
-
 while game_over == False:
-    clear()
+    clear_screen()
 
     answer_word_as_string = "".join(answer_word)
     print(f"Вы отгадали: {answer_word_as_string}")
 
-    print(f"Подсказка: {hint}")
+    print(f"Подсказка: {hint_for_guessed_word}")
     answer_letter = input("Введите предполагаемую букву загаданного слова: ")
 
     has_answer_letter = answer_letter in guessed_word
