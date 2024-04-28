@@ -1,6 +1,6 @@
 import os
 
-clear = lambda: os.system("clear")  # for linux and macos
+clear_screen = lambda: os.system("clear")  # for linux and macos
 # clear = lambda: os.system("cls")  # for windows
 
 guessed_word = input("Введите слово: ")

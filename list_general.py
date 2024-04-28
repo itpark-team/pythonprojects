@@ -1,5 +1,6 @@
 heights = [172, 162, 192, 132, 152, 192, 181]
 
+
 # heights[0] = heights[0] * 2
 
 # double_heights = []
